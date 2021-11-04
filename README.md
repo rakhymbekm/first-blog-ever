@@ -9,12 +9,15 @@ Written on PERN stack
 </li>
 <li>&nbsp;
 <h3>on the 1st one write the following:</h3>
-<ol><li>npm install</li>
+<ol>
+  <li>cd client</li>
+  <li>npm install</li>
 <li>npm start</li>
 </ol>
 
 <h3>on the 2nd one write the following:</h3>
 <ol>
+  <li>cd server</li>
 <li>
 npm install</li>
 <li>node index</li>
