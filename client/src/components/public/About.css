@@ -1,0 +1,31 @@
+.about-blog-brief-description {
+	margin: 1em 0;
+	text-align: justify;
+}
+
+.about-blog {
+	padding: 1em 0;
+}
+
+.about-blog-heading {
+	font-size: 1.8rem;
+	margin-bottom: 1em;
+}
+
+.about-blog-content {
+	margin: 1em 0;
+	text-align: justify;
+}
+
+.about-link:hover {
+	text-decoration: underline;
+}
+
+.sources-title {
+	font-size: 1.6rem;
+}
+
+.source-list {
+	font-style: italic;
+	padding-left: .3em;
+}

@@ -1,0 +1,67 @@
+.public-home-posts {
+	margin: 0 auto;
+	margin: 1em 0;
+}
+
+.public-home-posts-heading {
+	font-size: 1.8rem;
+	margin: 1em 0;
+}
+
+.public-home-post-list {
+	margin: 1em 0;
+}
+
+.public-home-post-list-item {
+    margin: 1em 0;
+}
+
+.public-home-post-title {
+	font-size: 1.6rem;
+	margin: .8em 0;
+}
+
+.public-home-post-title>.public-home-post-link:hover {
+	text-decoration: underline;
+}
+
+.public-home-post-description {
+	font-size: 1.2rem;
+	margin: .5em 0;
+}
+
+.public-home-post-author-line {
+    font-size: 1rem;
+}
+
+.public-home-post-author {
+    display: inline-block;
+}
+
+.public-home-show-more-line {
+    font-size: 90%;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.public-home-show-more-btn {
+	padding-bottom: .25em;
+	cursor: pointer;
+}
+
+.public-home-show-more-btn:hover, .public-home-show-more-btn:focus {
+	border-bottom: 1px solid black;
+}
+
+.public-home-show-more-btn:active {
+	transform: scale(.9,.9);
+}
+
+.public-home-no-post-info {
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1.5em;
+}

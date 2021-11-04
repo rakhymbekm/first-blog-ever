@@ -1,0 +1,42 @@
+.post-edit-title-lable,
+.post-edit-description-lable,
+.post-edit-body-lable {
+    margin: 1em 0;
+    display: inline-block;
+}
+
+.post-edit-title-lable,
+.post-edit-description-lable {
+	margin-right: 1.2em;
+}
+
+.post-edit-title,
+.post-edit-description {
+	width: 60%;
+	margin: 1em 0;
+	padding: .7em;
+	box-sizing: border-box;
+}
+
+.post-edit-body {
+	box-sizing: border-box;
+	width: 100%;
+	padding: .7em;
+}
+
+.btn.btn-post-save {
+	margin-top: 1.2em;
+	padding: .75em 2.5em;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.btn.btn-post-save:hover, .btn.btn-post-save:focus {
+	background: rgba(0,0,0,0.3);
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.btn.btn-post-save:active {
+	transform: scale(.9,.9);
+}

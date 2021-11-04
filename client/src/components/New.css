@@ -1,0 +1,29 @@
+.post-form .post-title, .post-form .post-description {
+	width: 100%;
+	margin: 1em 0;
+	padding: .7em;
+	box-sizing: border-box;
+}
+
+.post-form .post-body {
+	box-sizing: border-box;
+	width: 100%;
+	padding: .7em;
+}
+
+.btn.btn-post-create {
+	margin-top: 1.2em;
+	padding: .75em 2.5em;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.btn.btn-post-create:hover, .btn.btn-post-create:focus {
+	background: rgba(0,0,0,0.3);
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.btn.btn-post-create:active {
+	transform: scale(.9,.9);
+}

@@ -1,0 +1,107 @@
+.modal {
+	box-sizing: border-box;
+	background-color: rgba(0,0,0, 0.85);
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-content {
+	position: relative;
+	width: 450px;
+	height: 300px;
+	background-color: rgba(255,255,255, 1);
+	padding: 2em;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.modal-title {
+	font-size: 1.6rem;
+	text-align: center;
+	margin-bottom: 1em;
+
+}
+
+.modal-btn-list {
+	display: flex;
+	align-items: center;
+}
+
+.modal-btn-list-item {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.modal-btn {
+	display: block;
+	box-sizing: border-box;
+	width: 90%;
+	padding: .75em 2.5em;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.modal-btn:active {
+	transform: scale(.9,.9);
+}
+
+.modal-del-btn {
+	color: white;
+	background: rgb(239, 79, 121);
+}
+
+.modal-del-btn:hover, .modal-del-btn:focus {
+	background: rgb(237, 59, 106);
+	text-shadow: 1px 1px #c11b47;
+}
+
+
+.modal-cancel-btn:hover, .modal-cancel-btn:focus {
+	background: rgba(0,0,0,.4);
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.modal-close-btn {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background: white;
+	border-radius: 50%;
+	padding: .5em;
+	border: 1px black solid;
+	width: 30px;
+	height: 30px;
+	font-size: .7rem;
+	cursor: pointer;
+}
+
+.modal-close-btn:active {
+	transform: scale(.9,.9);
+}
+
+@media(max-width: 800px) {
+	.modal-content {
+	    width: 400px;
+	    height: 250px;
+	}
+}
+
+@media(max-width: 475px) {
+	.modal-content {
+	    width: 310px;
+	    height: 220px;
+	}
+	.modal-title {
+		font-size: 1.4rem;
+	}
+}

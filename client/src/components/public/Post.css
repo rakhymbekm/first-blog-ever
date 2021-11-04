@@ -1,0 +1,18 @@
+.public-post-title {
+	font-size: 1.8rem;
+	margin: 1em 0;
+}
+
+.public-post-body {
+	text-align: justify;
+	margin-bottom: 1em;
+}
+
+.public-post-author-line {
+    font-size: 1rem;
+    margin-bottom: 1.2em;
+}
+
+.public-post-author {
+    display: inline-block;
+}
