@@ -1,9 +1,9 @@
-psql -U postgres
-12345
+--psql -U postgres
+--12345
 
-CREATE DATABASE blog;
+--CREATE DATABASE blog;
 
-\c blog
+--\c blog
 
 SET NAMES 'UTF8';
 
