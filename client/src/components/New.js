@@ -43,14 +43,14 @@ const New = () => {
 
     return (
         <Fragment>
-            <h1 className="main-content-heading">Жаңа пост жазу беті</h1>
+            <h1 className="main-content-heading">New post creation page</h1>
 			<article className="post">
 				<form onSubmit={savePost} className="post-form">
 					<input 
                         onChange={e=>onChange(e)} 
                         value={title} 
                         name="title" 
-                        placeholder="Посттың тақырыбы..." 
+                        placeholder="Title..." 
                         type="text"
                         id="post_title" 
                         className="post-title" 
@@ -61,7 +61,7 @@ const New = () => {
                         onChange={onChange} 
                         value={description} 
                         name="description" 
-                        placeholder="Посттың сипаттамасы..." 
+                        placeholder="Description..." 
                         type="text"
                         id="post_description" 
                         className="post-description" 
@@ -74,10 +74,10 @@ const New = () => {
                         name="body" 
                         cols="120" 
                         rows="20" 
-                        placeholder="Жаңа посттың мазмұны" 
+                        placeholder="Content of the new post" 
                         className="post-body"></textarea>
                     <br />
-					<input type="submit" className="btn btn-post-create" value="Жариялау" />
+					<input type="submit" className="btn btn-post-create" value="Publish" />
 				</form>
 			</article>
         </Fragment>
