@@ -9,7 +9,7 @@ const Home = () => {
 
     async function getPosts() {
         try {
-            const res = await fetch("http://localhost:5000/posts/" + postNumberLimit, {
+            const res = await fetch("/posts/" + postNumberLimit, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -33,9 +33,9 @@ const Home = () => {
 
     return (
         <Fragment>
-            <h1 className="main-content-heading">Басты бет</h1>
+            <h1 className="main-content-heading">Home page</h1>
 			<section className="public-home-posts">
-				<h1 className="public-home-posts-heading">Посттар</h1>
+				<h1 className="public-home-posts-heading">Posts</h1>
                 <ul className="public-home-post-list">
 					{
                         posts.map(
@@ -44,7 +44,7 @@ const Home = () => {
                                     <article className="public-home-post">
                                         <h1 className="public-home-post-title"><Link to={"/post/" + post.id} className="public-home-post-link">{post.title}</Link></h1>
                                         <p className="public-home-post-description">{post.description}</p>
-                                        <div className="public-home-post-author-line">Пост авторы: <address className="public-home-post-author">{post.nickname}</address></div>
+                                        <div className="public-home-post-author-line">Author: <address className="public-home-post-author">{post.nickname}</address></div>
                                     </article>
                                 </li>
                         )
@@ -52,7 +52,7 @@ const Home = () => {
                 </ul>
                 {
                     isAllPostShown ?
-                        <p className="public-home-no-post-info">Посттардың бары осы...</p> :
+                        <p className="public-home-no-post-info">All posts have been shown...</p> :
                         <Fragment>
                             <p className="public-home-show-more-line">
                                 <button 
@@ -60,7 +60,7 @@ const Home = () => {
                                         e.preventDefault();
                                         setPostNumberLimit(postNumberLimit+10);
                                     }}
-                                    className="public-home-show-more-btn">Тағы басқа посттарды көрсету</button>
+                                    className="public-home-show-more-btn">More...</button>
                             </p>
                         </Fragment>
                 }

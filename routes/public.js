@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const pool = require('../db');
+const path = require('path');
 
 router.get('/', async (req, res) => {
     try {        
@@ -35,6 +36,10 @@ router.get('/post/:postId', async (req, res) => {
         console.error(err.message);
         res.status(500).json('Server Error');
     }
+});
+
+router.get("*", async (req, res) => {
+    res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
 module.exports = router;
