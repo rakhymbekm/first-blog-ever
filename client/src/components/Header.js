@@ -11,7 +11,7 @@ const Header = ({setAuth, isAuthenticated}) => {
 			<h1 className="page-header-heading"><Link to={
                 isAuthenticated && 
                 (currentPath != '/' && 
-                    currentPath != '/about') ? "/admin":"/"}>Жай блог</Link></h1>
+                    currentPath != '/about') ? "/admin":"/"}>Simple blog</Link></h1>
             <Nav isAuthenticated={isAuthenticated} setAuth={setAuth} />
         </header>
     );
