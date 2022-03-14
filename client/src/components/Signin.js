@@ -39,11 +39,11 @@ const Signin = ({setAuth}) => {
 
     return (
         <Fragment>
-            <h1 className="main-content-heading">Жүйеге кіру беті</h1>
+            <h1 className="main-content-heading">Sign in page</h1>
             <form className="log-in-form form" onSubmit={onSubmitForm}>
                 <input
                     required
-                    placeholder="Поштасы"
+                    placeholder="email"
                     className="log-in-input log-in-name"
                     type="email"
                     name="email"
@@ -53,7 +53,7 @@ const Signin = ({setAuth}) => {
                 <br />
                 <input
                     required
-                    placeholder="Құпия сөзі"
+                    placeholder="Password..."
                     className="log-in-input log-in-pass"
                     type="password"
                     name="password"
@@ -64,8 +64,8 @@ const Signin = ({setAuth}) => {
                 <input
                     className="log-in-input log-in-btn"
                     type="submit"
-                    value="Кіру" />
-                <p className="sign-up-suggestion suggestion">Есептік жазбаңыз жоқ па? <Link to="/signup" className="suggestion-link">Тіркеліңіз</Link></p>
+                    value="Sign in" />
+                <p className="sign-up-suggestion suggestion">Do not have an account? <Link to="/signup" className="suggestion-link">Register</Link></p>
             </form>
         </Fragment>
     );
