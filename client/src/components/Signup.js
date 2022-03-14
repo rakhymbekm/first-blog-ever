@@ -39,10 +39,10 @@ const Signup = ({setAuth}) => {
 
     return (
         <Fragment>
-            <h1 className="main-content-heading">Тіркелу беті</h1>
+            <h1 className="main-content-heading">Sign up page</h1>
             <form className="sign-up-form form" onSubmit={onSubmitForm}>
                 <input
-                    placeholder="Лақап аты"
+                    placeholder="Nickname..."
                     required
                     className="sign-up-input sign-up-name"
                     type="text"
@@ -52,7 +52,7 @@ const Signup = ({setAuth}) => {
                 />
                 <br />
                 <input
-                    placeholder="Поштасы"
+                    placeholder="email..."
                     required
                     className="sign-up-input sign-up-email"
                     type="email"
@@ -62,7 +62,7 @@ const Signup = ({setAuth}) => {
                 />
                 <br />
                 <input
-                    placeholder="Құпия сөзі"
+                    placeholder="Password..."
                     required
                     className="sign-up-input sign-up-pass"
                     type="password"
@@ -74,10 +74,10 @@ const Signup = ({setAuth}) => {
                 <input
                     className="sign-up-input sign-up-btn"
                     type="submit"
-                    value="Тіркелу"
+                    value="Sign up"
                 />
                 <p className="sign-up-suggestion suggestion">
-                    Есептік жазбаңыз бар ма? <Link to="/signin" className="suggestion-link">Жүйеге кіріңіз</Link>
+                    Already signed up? <Link to="/signin" className="suggestion-link">Sign in</Link>
                 </p>
             </form>
         </Fragment>
