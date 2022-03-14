@@ -32,12 +32,12 @@ const WarnModal = ({setShowModal, delPostId, setDelPostId}) => {
     return (
         <section className="modal del-modal">
 			<article className="modal-content">
-				<h1 className="modal-title">Постты жойғыңыз келетініне сенімдісіз бе?</h1>
+				<h1 className="modal-title">Are you sure you wanna delete the post?</h1>
 				<ul className="modal-btn-list">
 					<li className="modal-btn-list-item"><button className="modal-btn modal-del-btn"
-                        onClick={delPost}>Иә</button></li>
+                        onClick={delPost}>Yes</button></li>
 					<li className="modal-btn-list-item"><button className="modal-btn modal-cancel-btn" 
-						onClick={hideModal}>Қайтару</button></li>
+						onClick={hideModal}>Cancel</button></li>
 				</ul>
 				<button className="modal-close-btn" 
 						onClick={hideModal}>&#10006;</button>
