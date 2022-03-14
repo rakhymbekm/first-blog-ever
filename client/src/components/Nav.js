@@ -9,7 +9,7 @@ const Nav = ({setAuth, isAuthenticated}) => {
         e.preventDefault();
         localStorage.removeItem('token');
         setAuth(false);
-        // window.location.href = "http://localhost:3001/signin"; // уақытша шешім
+        // window.location.href = "http://localhost:3001/signin"; // was a temp solution
     }
 
     return (
@@ -18,20 +18,20 @@ const Nav = ({setAuth, isAuthenticated}) => {
                 <li className={"nav-list-item header-nav-list-item" + (currentPath == '/' || currentPath == '/admin' ? " active" : "")}>
                     <Link 
                         className={"nav-link header-nav-link" + (currentPath == '/' || currentPath == '/admin' ? " active" : "")} 
-                        to={isAuthenticated && (currentPath != '/' && currentPath != '/about') ? "/admin" : "/"}>Басты бет</Link>
+                        to={isAuthenticated && (currentPath != '/' && currentPath != '/about') ? "/admin" : "/"}>Home</Link>
                 </li>
                 <li className={"nav-list-item header-nav-list-item" + (currentPath == '/about' || currentPath == '/new' ? " active" : "")}>
                     <Link 
                         className={"nav-link header-nav-link" + (currentPath == '/about' || currentPath == '/new' ? " active" : "")} 
                         to={isAuthenticated && (currentPath != '/' && currentPath != '/about') ? "/new" : "/about"}>
-                            {isAuthenticated && (currentPath != '/' && currentPath != '/about') ? "Жаңа пост" : "Блог туралы"}</Link>
+                            {isAuthenticated && (currentPath != '/' && currentPath != '/about') ? "New post" : "About"}</Link>
                 </li>
                 {
                     isAuthenticated && (currentPath != '/' && currentPath != '/about')  ?
                         <li className="nav-list-item header-nav-list-item">
                             <button 
                                 onClick={logout} 
-                                className="btn header-btn log-out-btn">Шығу</button>
+                                className="btn header-btn log-out-btn">Sign out</button>
                         </li> : null
                 }
             </ul>
