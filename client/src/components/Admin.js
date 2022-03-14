@@ -45,9 +45,9 @@ const Admin = ({setShowModal, delPostId, setDelPostId, setEditPostId}) => {
 
     return (
         <Fragment>
-            <h1 className="main-content-heading">Әкімнің басты беті</h1>
+            <h1 className="main-content-heading">Admin home</h1>
             <section className="posts">
-				<h1 className="posts-heading">Посттар</h1>
+				<h1 className="posts-heading">Posts</h1>
                 <ul className="post-list">
                     {
                         posts.map(
