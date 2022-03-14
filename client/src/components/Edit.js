@@ -71,12 +71,12 @@ const Edit = ({editPostId}) => {
 
     return (
         <Fragment>
-            <h1 className="main-content-heading">Постты өңдеу беті</h1>
+            <h1 className="main-content-heading">Edit post</h1>
 			<article className="edit-post">
 				<form onSubmit={updatePost} className="edit-post-form">					
 					<label 
                         className="post-edit-title-lable" 
-                        htmlFor="post_edit_title">Посттың тақырыбы: </label>
+                        htmlFor="post_edit_title">Title: </label>
                     <input 
                         type="text" 
                         name="title" 
@@ -89,7 +89,7 @@ const Edit = ({editPostId}) => {
                     <br/>
                     <label 
                         className="post-edit-description-lable" 
-                        htmlFor="post_edit_description">Посттың сипаттамасы: </label>
+                        htmlFor="post_edit_description">Description: </label>
                     <input 
                         type="text" 
                         name="description" 
@@ -102,7 +102,7 @@ const Edit = ({editPostId}) => {
                     <br/>
 					<label 
                         className="post-edit-body-lable" 
-                        htmlFor="post_edit_body">Посттың мазмұны: </label>
+                        htmlFor="post_edit_body">Content: </label>
                     <br/>
 					<textarea 
                         required 
