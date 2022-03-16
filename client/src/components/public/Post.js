@@ -10,7 +10,7 @@ const Post = () => {
 
     async function getBlogPost() {
         try {
-            const res = await fetch("/post/" + id, {
+            const res = await fetch("http://localhost:5000/post/" + id, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
