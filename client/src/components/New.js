@@ -20,7 +20,7 @@ const New = () => {
         e.preventDefault();
         try {
             if (localStorage.getItem('token') !== null) {
-                const res = await fetch("/admin", {
+                const res = await fetch("http://localhost:5000/admin", {
                     method: "POST",
                     headers: {
                         token: localStorage.getItem('token'),
