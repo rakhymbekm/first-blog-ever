@@ -9,7 +9,7 @@ const Home = () => {
 
     async function getPosts() {
         try {
-            const res = await fetch("/posts/" + postNumberLimit, {
+            const res = await fetch("http://localhost:5000/posts/" + postNumberLimit, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
