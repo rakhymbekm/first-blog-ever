@@ -10,7 +10,7 @@ const WarnModal = ({setShowModal, delPostId, setDelPostId}) => {
     async function delPost() {
          try {
             if (localStorage.getItem('token') !== null) {
-                const res = await fetch("/admin/delete/post/" + delPostId, {
+                const res = await fetch("http://localhost:5000/admin/delete/post/" + delPostId, {
                     method: "DELETE",
                     headers: {
                         token: localStorage.getItem('token')
