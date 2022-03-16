@@ -36,7 +36,7 @@ function App() {
   async function isAuth() {
     try {
       if (localStorage.getItem('token') !== null) {
-        const res = await fetch("/auth/verified", {
+        const res = await fetch("http://localhost:5000/auth/verified", {
           method: "GET",
           headers: {
             token: localStorage.getItem('token')
